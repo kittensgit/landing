@@ -1,29 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-} 
+}
 
-p{
+p {
     margin: 0 0 5px;
 }
 
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
 }
+
 /* header start */
-header{
+header {
     width: 100%;
     position: absolute;
     top: 0;
@@ -31,59 +39,59 @@ header{
     z-index: 3;
 }
 
-.header__wrapper{
+.header__wrapper {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__block{
+.header__block {
     width: 20%;
 }
 
-.header__block:last-child{
-   text-align: right;
+.header__block:last-child {
+    text-align: right;
 }
 
-.header__logo{
+.header__logo {
     display: inline-block;
 }
 
-.header__logo img{
+.header__logo img {
     height: 65px;
 }
 
-.header__lng-link:hover{
+.header__lng-link:hover {
     color: #fff;
 }
 
-nav{
+nav {
     display: flex;
 }
 
-.nav__link{
+.nav__link {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
-    margin-right: 35px; 
+    margin-right: 35px;
     position: relative;
 }
 
-.nav__link:last-child{
+.nav__link:last-child {
     margin-right: 0;
 }
 
-.nav__link:hover:after{
+.nav__link:hover:after {
     opacity: 1;
 }
 
-.nav__link.active::after{
+.nav__link.active::after {
     opacity: 1;
 }
 
-.nav__link::after{
+.nav__link::after {
     width: 100%;
     height: 2px;
     background-color: #fff;
@@ -95,7 +103,7 @@ nav{
     transition: opacity .2s ease;
 }
 
-.header__lng{
+.header__lng {
     display: flex;
     justify-content: end;
 }
@@ -109,22 +117,23 @@ nav{
     transition: color .2s ease;
 }
 
-.header__lng-link.active{
+.header__lng-link.active {
     color: #fff;
 }
 
-.header__lng-link:last-child{
+.header__lng-link:last-child {
     margin-right: 0;
 }
+
 /* header end */
 /* intro start */
-.intro{
+.intro {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.intro::after{
+.intro::after {
     width: 100%;
     height: 100%;
 
@@ -137,7 +146,7 @@ nav{
     content: "";
 }
 
-.intro__content{
+.intro__content {
     height: 750px;
     display: flex;
     align-items: center;
@@ -145,16 +154,17 @@ nav{
     z-index: 2;
 }
 
-.intro__title{
+.intro__title {
     max-width: 790px;
     color: #fff;
     font-size: 48px;
     font-weight: 700;
     line-height: 150%;
-   
+
     margin-bottom: 30px;
 }
-.btn{
+
+.btn {
     min-width: 200px;
     height: 50px;
     padding: 0 15px;
@@ -169,14 +179,18 @@ nav{
     transition: background-color .2 ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #b61200;
 }
 
 /* intro end */
 
-.section{
+.section {
     margin-bottom: 100px;
+}
+
+.section.process {
+    padding-top: 50px;
 }
 
 /* info start */
@@ -195,7 +209,7 @@ nav{
     margin-bottom: 20px;
 }
 
-.info__img img{
+.info__img img {
     height: 30px;
 }
 
@@ -221,6 +235,11 @@ nav{
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
+
+.block__title.text-white {
+    color: #fff;
+}
+
 .block__link {
     margin-bottom: 60px;
     display: inline-block;
@@ -231,55 +250,56 @@ nav{
     transition: color .2s ease;
 }
 
-.block__link:hover{
+.block__link:hover {
     color: #8a8a8a;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     margin: 0 -10px;
 }
 
-.block{
+.block {
     width: 33.33%;
     padding: 0 10px;
 }
+
 /* section end */
 
 /* services start */
 .services__item {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.services__item:hover .services__content-item{
+.services__item:hover .services__content-item {
     opacity: 1;
 }
 
-.services__item:hover .services__content::after{
+.services__item:hover .services__content::after {
     opacity: .7;
 }
 
 .services__content {
-    height: 500px;  
+    height: 500px;
     margin-bottom: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.services__content::after{
+.services__content::after {
     width: 100%;
     height: 100%;
     background: #000;
     opacity: 0;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     content: "";
     transition: opacity .2s ease;
 }
 
-.services__content-item{
+.services__content-item {
     position: absolute;
     top: 0;
     left: 0;
@@ -290,7 +310,7 @@ nav{
     transition: opacity .2s ease;
 }
 
-.services__img{
+.services__img {
     width: 100px;
     height: 100px;
     display: flex;
@@ -315,6 +335,7 @@ nav{
     left: 30px;
     bottom: 20px;
 }
+
 .services__title {
     font-size: 20px;
     font-weight: 600;
@@ -322,4 +343,75 @@ nav{
     text-transform: uppercase;
     color: #000;
 }
+
 /* services end */
+/* about start */
+.about {
+    padding: 115px 0;
+    background-color: #171616;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__block {
+    max-width: 505px;
+}
+
+.about__text {
+    margin: 35px 0 40px;
+    color: #b7b7b7;
+    font-weight: 600;
+    letter-spacing: 0.23em;
+}
+
+.about__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about__link:hover {
+    text-decoration: underline;
+}
+
+.about__img {
+    height: 340px;
+}
+
+/* about end*/
+/* process start */
+
+.process__title {
+    font-size: 148px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.process__subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.process__item {
+    padding: 30px 30px 15px;
+    height: 100%;
+    min-height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+/* process end */
