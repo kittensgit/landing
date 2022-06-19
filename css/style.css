@@ -177,11 +177,15 @@ nav {
     font-weight: 500;
     background-color: #DB2512;
     transition: background-color .2 ease;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
 }
 
 .btn:hover {
     background-color: #b61200;
 }
+
 
 /* intro end */
 
@@ -262,6 +266,10 @@ nav {
 .block {
     width: 33.33%;
     padding: 0 10px;
+}
+
+.text-upper {
+    text-transform: uppercase;
 }
 
 /* section end */
@@ -415,3 +423,125 @@ nav {
 }
 
 /* process end */
+
+/* contacts start */
+
+.contacts {
+    padding: 100px 0;
+    background-color: #171616;
+}
+
+.contacts .block__title {
+    margin-bottom: 40px;
+}
+
+.contacts__form {
+    max-width: 440px;
+}
+
+.form__row {
+    margin: 0 -20px;
+    display: flex;
+
+}
+
+.form__group {
+    padding: 0 20px;
+    flex: 1;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input {
+    width: 100%;
+    padding: 9px 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.input:focus+.label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+
+.input:not(:placeholder-shown)+.label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+
+.label {
+    letter-spacing: 0.15em;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    pointer-events: none;
+    transition: all .2s ease;
+}
+
+.textarea {
+    min-height: 130px;
+    width: 100%;
+    resize: vertical;
+    padding: 9px 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.textarea:focus+.label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+
+.textarea:not(:placeholder-shown)+.label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+
+/* contacts end */
+
+/* footer start */
+
+.footer {}
+
+.footer__wrapper {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+}
+
+.footer__soc {
+    display: flex;
+}
+
+.footer__soc-link {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer__soc-link:last-child {
+    margin-right: 0;
+}
+
+.footer__soc-link img {
+    height: 25px;
+}
+
+/* footer end */
